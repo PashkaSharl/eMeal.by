@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    
+}
+.promotion__descr span{
+    font-weight:700;
+    font-size:26px
+}
+.promotion__timer{
+    width:50%;
+    display: flex;
+    justify-content: space-between
+
+}
+.promotion__timer .title{
+    text-align: center;
+}
+.promotion__timer .timer{
+    margin-top:20px;
+    padding-left:95px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.promotion__timer .timer__block{
+    width:102px;
+    height:120px;
+    background:#fff;
+    box-shadow:0 4px 20px rgba(0,0,0,.25);
+    font-size:16px;
+    font-weight:300;
+    text-align:center
+}
+.promotion__timer .timer__block span{
+    display:block;
+    margin-top:20px;
+    margin-bottom:5px;
+    font-size:56px;
+    font-weight:700
+}
+.sell_but{
+    width: 150px;
+    cursor: pointer;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    background-color: red;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 30px 30px;
+}
+
+img{
+    background-image: url(images/MasterCard.svg);
+    background-position-x: 97%;
+    background-position-y: 5%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+    margin-top: 11px;
+    background-color: #FF83A1;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+}
+
+
+
+.card{
+    position: relative;
+    text-align: center;
+}
+
+.card_num_text{
+    position: absolute;
+    top: 26%;
+    left: 10%;
+    font-size: 37px;
+    color: #FFFFFF85;
+    
+}
+
+.card_num{
+    position: absolute;
+    top: 36%;
+    left: 10%;
+    font-size: 77px;
+    color:#FFFFFF; 
+
+}
+
+.card_name_text{
+    position: absolute;
+    top: 62%;
+    left: 10%;
+    font-size: 37px;
+    color: #FFFFFF85;
+}
+
+.card_name{
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    font-size: 54px;
+    color:#FFFFFF; 
+}
+.card_date_text{
+    position: absolute;
+    top: 62%;
+    left: 60%;
+    font-size: 37px;
+    color: #FFFFFF85;
+}
+.card_date{
+    position: absolute;
+    top: 75%;
+    left: 60%;
+    font-size: 42px;
+    color:#FFFFFF;
+}
+.cvv_block{
+    display: flex;
+    justify-content: space-between;
+    margin: 70px;
+}
+h1{
+    font-size: 35px;
+    
+    color: #475062;
+}
+.p_verif{
+    font-size: 30px;
+    color: #6E7A90;
+}
+input{
+    width: 200px;
+    padding: 10px 50px;
+    border-radius: 15px;
+    font-size: 40px;
+   
+}
+.line{
+    border: 2px solid #CED2DA;
+    border-radius: 3px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.follow{
+    margin-left: 70px;
+    color: #475062;
+    font-size: 35px;
+}
+.otp_pass{
+    cursor: pointer;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    background-color: #5EC4FF;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 40px;
+    padding: 30px 40px;
+}
+
+.decl{
+    display: inline-block;
+    width: 800px;
+    margin-left: 70px;
+    margin-bottom: 140px;
+    font-size: 19px;
+    color: #475062;
+
+}
+span{
+    color: black;
+}
+.button{
+    margin-top: 80px;
+    text-align: center;
+}
+.button a{
+    padding: 45px 200px 45px 200px;
+    font-size: 20px;
+    background: #475062;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal{
+ 
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top:0;
+    background-color: transparent;
+    z-index: 2;
+    transform: translateY(44.5%) scale(0);
+    transition: .4s ease-in-out;
+}
+.modal.active{
+    transform: translateY(0%)scale(100%);
+    background-color: rgba(0, 0, 0, .5);
+}
+.modal_container{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.modal_body{
+    margin: auto;
+    width: 500px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 15px 50px 15px;
+    position: relative;
+}
+.modal_body p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+}
+
+.click{
+    padding-bottom: 20px;
+    cursor: default
+}
+.continue{
+    cursor: default
+}
+.modal_body button{
+    cursor: pointer;
+    display: block;
+    width: 330px;
+    margin: 60px auto 0px auto;
+    padding: 20px 0px;
+    font-size: 16px;
+    border: none;
+    color: #ffff;
+    border-radius: 10px;
+    background-color: greenyellow;
+    color: black;
+}
+.modal_close{
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 21px;
+}
+@media(max-width:768px){
+    .card_num_text{
+        
+ 
+        font-size: 30px;
+        
+    }
+    
+    .card_num{
+ 
+        font-size: 60px;
+
+    
+    }
+    
+    .card_name_text{
+
+        font-size: 30px;
+    
+    }
+    
+    .card_name{        position: absolute;
+        top: 75%;
+        left: 10%;
+        font-size: 47px;
+    
+    }
+    .card_date_text{
+        font-size: 30px;
+    }
+    .card_date{
+
+        font-size: 37px;
+
+    }
+    
+    .otp_pass{
+        font-size: 20px;
+        padding: 30px 40px;
+    }
+    .decl{
+        width: 600px;
+    }
+}
+
+
+@media(max-width:425px){
+    img{
+        background-size: 50px
+    }
+    .card_num_text{
+        
+ 
+        font-size: 23px;
+        
+    }
+    
+    .card_num{
+ 
+        font-size: 30px;
+
+    
+    }
+    
+    .card_name_text{
+
+        font-size: 23px;
+    
+    }
+    
+    .card_name{
+        font-size: 25px;
+    
+    }
+    .card_date_text{
+        font-size: 23px;
+    }
+    .card_date{
+
+        font-size: 25px;
+
+    }
+    h1{
+        font-size: 25px;
+    }
+    .p_verif{
+        font-size: 20px;
+        color: #6E7A90;
+    }
+    input{
+        width: 70px;
+        padding: 10px 50px;
+        border-radius: 15px;
+        font-size: 40px;
+       
+    }
+    .follow{
+        width: 300px;
+        font-size: 20px;
+    }
+    
+    .otp_pass{
+        font-size: 15px;
+        padding: 20px 20px;
+    }
+    .decl{
+        width: 280px;
+    }
+    .button a{
+        padding: 45px 50px 45px 50px;
+        font-size: 15px;
+    }
+}
+@media(max-width:320px){
+    .card_num_text{
+        
+ 
+        font-size: 16px;
+        
+    }
+    
+    .card_num{
+ 
+        font-size: 20px;
+
+    
+    }
+    
+    .card_name_text{
+
+        font-size: 16px;
+    
+    }
+    
+    .card_name{
+        font-size: 20px;
+    
+    }
+    .card_date_text{
+        font-size: 16px;
+    }
+    .card_date{
+
+        font-size: 20px;
+
+    }
+    h1{
+        font-size: 20px;
+    }
+    .cvv_block{
+
+        margin: 40px;
+    }
+    .p_verif{
+        font-size: 15px;
+        color: #6E7A90;
+    }
+    input{
+        width: 50px;
+        padding: 10px 40px;
+        border-radius: 15px;
+        font-size: 20px;
+       
+    }
+    .line{
+        border: 2px solid #CED2DA;
+        border-radius: 3px;
+        margin-bottom: 70px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .follow{
+        margin-left: 40px;
+        color: #475062;
+        font-size: 35px;
+    }
+    .otp_pass{
+
+        margin-left: 40px;
+
+    }
+    
+    .decl{
+        display: inline-block;
+        width: 800px;
+        margin-left: 40px;
+        margin-bottom: 140px;
+        font-size: 14px;
+        color: #475062;
+    
+    }
+    .follow{
+        width: 300px;
+        font-size: 20px;
+    }
+    
+    .otp_pass{
+        font-size: 15px;
+        padding: 20px 20px;
+    }
+    .decl{
+        width: 280px;
+    }
+    .button a{
+        padding: 45px 50px 45px 50px;
+        font-size: 15px;
+    }
+}
